@@ -45,3 +45,4 @@ showMorebtn.addEventListener("click", () => {
     page++;
     sarchImage();
 })
+

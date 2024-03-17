@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=RocknRoll+One&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +13,6 @@ body {
     color: white;
 }
 
-
 h1 {
     font-size: 50px;
     text-align: center;
@@ -22,17 +20,24 @@ h1 {
     font-weight: 800;
 }
 
-form {
+.search-container {
     width: 50%;
     margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.search-form {
+    flex: 1;
     height: 80px;
     background-color: rgb(135, 119, 191);
     display: flex;
     align-items: center;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
-form input {
+.search-form input {
     flex: 1;
     height: 100%;
     border: 0;
@@ -43,9 +48,9 @@ form input {
     padding: 0px 30px;
 }
 
-form button {
+.btn {
     padding: 0px 40px;
-    height: 100%;
+    height: 80px;
     background-color: #89433f;
     color: whitesmoke;
     font-size: 20px;
@@ -56,7 +61,7 @@ form button {
     cursor: pointer;
 }
 
-button:hover {
+.btn:hover {
     background-color: #ff3929;
     /* Darker shade of red */
 }
@@ -94,36 +99,17 @@ button:hover {
     border-radius: 5px;
 }
 
-@media only screen and (max-width:900px) {
-    form {
+@media only screen and (max-width: 900px) {
+    .search-container {
         width: calc(100% - 40px);
         margin: auto;
     }
+
 }
 
-
-@media only screen and (max-width:600px) {
-    .btn {
-        margin-left: 0px;
-    }
-
-    #searching-box {
-        margin-right: 0px;
-    }
-}
-
-
-@media only screen and (max-width:350px) {
+@media only screen and (max-width: 500px) {
     h1 {
-        align-items: center;
-        font-size: 30px;
-        text-align: center;
-        /* margin: 80px auto 50px; */
-        font-weight: 800;
+        font-size: 40px;
+        /* Adjust the font size as needed */
     }
-
-    form {
-        height: 50px;
-    }
-
 }
